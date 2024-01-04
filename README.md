@@ -2,7 +2,8 @@
 Shchegolkov-vg Infra repository
 
 bastion_IP =158.160.142.26
-sominternalhost_IP =10.131.0.20
+
+someinternalhost_IP =10.131.0.20
 
 Подключение к sominternalhost в одну команду:
 
