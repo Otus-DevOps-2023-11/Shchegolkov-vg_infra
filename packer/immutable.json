@@ -31,12 +31,6 @@
             "script": "scripts/deploy.sh",
             "execute_command": "sudo {{.Path}}",
             "pause_before": "30s"
-        },
-        {
-            "type": "file",
-            "source": "files/reddit.service",
-            "destination": "/tmp/reddit.service",
-            "pause_before": "30s"
         }
         ]
 }
