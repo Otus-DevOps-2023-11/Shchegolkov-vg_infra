@@ -1,0 +1,33 @@
+{
+  "builders": [
+    {
+      "type": "yandex",
+      "service_account_key_file": "/home/vladimir/education/key.json",
+      "folder_id": "b1g45b2ueser4lkvkknm",
+      "source_image_family": "ubuntu-1604-lts",
+      "image_name": "reddit-base-{{timestamp}}",
+      "image_family": "reddit-base",
+      "ssh_username": "ubuntu",
+      "platform_id": "standard-v1",
+      "subnet_id": "e9b52tgnhogstsp1k64d",
+      "use_ipv4_nat": "true"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo apt update",
+        "apt-get install dialog apt-utils -y",
+        "sudo apt-get install -y libterm-readline-perl-perl",
+        "sudo apt install -y mongodb",
+        "sudo systemctl start mongodb",
+        "sudo systemctl enable mongodb",
+        "sudo apt install -y ruby-full ruby-bundler build-essential"
+      ],
+      "execute_command": "sudo {{.Path}}",
+      "pause_before": "30s"
+    }
+  ]
+
+}
