@@ -11,13 +11,16 @@
 
 Создан базовый шаблон для packer ubuntu16.json
 Скорректированы скрипты используемые в provisioners шаблона:
+
 install_ruby.sh
 install_mongodb.sh
 Создана VM на основании образа
+
 После создания VM из готового образа вручную задеплоил  (
 `sudo apt-get update sudo apt-get install -y git git clone -b monolith https://github.com/express42/reddit.git cd reddit && bundle install`
 `puma -d`
 )приложение на VM и проверил его работу.
+
 Проверка:
 Заходим на адрес VM http://[IP_VM]:9292 должен отобразиться web-интерфейс приложения.
 *Выполнение скриптов установки пакетов ПО через provisioners вызывало ошибки из-за которых образ не собирался. Решение - отключение интерактивного режима установки  путем добавления переменной окружения  DEBIAN_FRONTEND в значение noninteractiveo.
