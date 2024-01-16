@@ -73,7 +73,7 @@ ________________________________________________________________________________
 
 Изучены команды terraform:
 
-'  apply              Builds or changes infrastructure
+``` apply              Builds or changes infrastructure
   destroy            Destroy Terraform-managed infrastructure
   fmt                Rewrites config files to canonical format
   get                Download and install modules for the configuration
@@ -84,5 +84,5 @@ ________________________________________________________________________________
   show               Inspect Terraform state or plan
   taint              Manually mark a resource for recreation
   validate           Validates the Terraform files
-  version            Prints the Terraform version '
+  version            Prints the Terraform version ```
 
