@@ -47,3 +47,31 @@ git clone -b monolith https://github.com/express42/reddit.git cd reddit && bundl
 `bash create-reddit-vm.sh`
 Проверка:
 Заходим на адрес VM http://[IP_VM]:9292 должен отобразиться web-интерфейс приложения.
+
+
+***HW6 Практика laC с использованием terraform***
+План:
+Установить terraform
+Изучить с основные команды terraform
+Изучить описание конфигурации terraform с параметризацией и без 
+Создать VM c запущеным приложением.
+Практика:
+Создать 2 VM через переменную count.
+Создать балансировщик нагрузки и проверить работу приложения при остановке одной из VM.
+Результат практического задания - создан файл main.tf описывающий создание instance и provisioners, добавлены дополнительные файлы для работы provisioner и файлы с определением переменных.
+
+Изучены команды terraform:
+
+  apply              Builds or changes infrastructure
+  destroy            Destroy Terraform-managed infrastructure
+  fmt                Rewrites config files to canonical format
+  get                Download and install modules for the configuration
+  init               Initialize a Terraform working directory
+  output             Read an output from a state file
+  plan               Generate and show an execution plan
+  providers          Prints a tree of the providers used in the configuration
+  show               Inspect Terraform state or plan
+  taint              Manually mark a resource for recreation
+  validate           Validates the Terraform files
+  version            Prints the Terraform version
+
