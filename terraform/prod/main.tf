@@ -29,6 +29,6 @@ module "db" {
   name_prefix     = var.name_prefix
 }
 module "vpc" {
-  source = "../modules/vpc"
+  source      = "../modules/vpc"
   name_prefix = var.name_prefix
 }
