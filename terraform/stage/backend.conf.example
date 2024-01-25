@@ -1,0 +1,5 @@
+bucket     = "terraform-state-block"
+region     = "ru-central1"
+key        = "terraform/prod/terraform.tfstate"
+access_key = "YCAJEF6W6LsWNRyomF_gw2Gr1"
+secret_key = "YCMmpOGcRQA6YwlXMJ6W8wFHTqJr8fAzQYgyL8Vl"
