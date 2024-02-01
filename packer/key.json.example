@@ -1,0 +1,8 @@
+{
+   "id": "ajectpic2i140hfjluls",
+   "service_account_id": "ajehargqo5vbtfq8lrt1",
+   "created_at": "2024-01-14T21:25:18.250015133Z",
+   "key_algorithm": "RSA_2048",
+   "public_key": "-----BEGIN PUBLIC KEY-----\nM\n-----END PUBLIC KEY-----\n",
+   "private_key": "PLEASE DO NOT REMOVE THIS LINE! Yandex.Cloud SA Key ID \u00339A==\n-----END PRIVATE KEY-----\n"
+}
