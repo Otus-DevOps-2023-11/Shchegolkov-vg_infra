@@ -105,7 +105,9 @@ instance stage external_ip_address_app = "158.160.121.67" external_ip_address_db
 
 instance prod external_ip_address_app = "158.160.108.53" external_ip_address_db = "158.160.119.30"
 
-***HW7 Знакомство с ansible"
+
+
+***HW7 Знакомство с ansible***
 План:
 1. Установить ansible  - **Выполнено**
 2. Знакомство с базовыми функциями  - **Выполнено**
