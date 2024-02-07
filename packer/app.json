@@ -1,9 +1,4 @@
 {
-  "variables"
-  {
-    "key_file": "",
-    "folder_id": "",
-  },
   "builders": [
     {
       "type": "yandex",
