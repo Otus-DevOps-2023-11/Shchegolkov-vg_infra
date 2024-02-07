@@ -1,17 +1,23 @@
 ---
 - name: Install MongoDB
   hosts: db
-  become: True
+  become: true
   tasks:
-  - name: Add MongoDB repository
-    apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen'
-    state: present
-  - name: install mongodb
-    apt: pkg=mongodb-org state=latest update_cache=yes
-    notify:
-    - start mongodb
+    - name: Add MongoDB repository
+      apt_repository:
+        repo: "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen"
+        state: present
+
+    - name: install mongodb
+      apt:
+        pkg: mongodb-org
+        state: latest
+        update_cache: yes
+      notify:
+        - start mongodb
+
   handlers:
-  - name: start mongodb
-    service:
-      name: mongodb
-      state: started
+    - name: start mongodb
+      service:
+        name: mongodb
+        state: started
