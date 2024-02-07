@@ -1,11 +1,11 @@
-#terraform {
-#  required_version = ">= 0.13.0"
-#  required_providers {
-#    yandex = {
-#      source  = "yandex-cloud/yandex"
-#    }
-#  }
-#}
+terraform {
+  required_version = ">= 0.13.0"
+  required_providers {
+    yandex = {
+      source  = "yandex-cloud/yandex"
+    }
+  }
+}
 resource "yandex_compute_instance" "app" {
 name            = "${var.name_prefix}reddit-app"
 labels          = {
@@ -35,11 +35,11 @@ connection {
   agent        = false
   private_key  = file(var.private_key_path)
 }
-provisioner "file" {
-    source      = "files/puma.service"
-    destination = "/tmp/puma.service"
-  }
-  provisioner "remote-exec" {
-    script      = "files/deploy.sh"
-  }
+#provisioner "file" {
+#    source      = "files/puma.service"
+#    destination = "/tmp/puma.service"
+#  }
+#  provisioner "remote-exec" {
+#    script      = "files/deploy.sh"
+#  }
 }

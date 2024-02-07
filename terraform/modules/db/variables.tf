@@ -1,6 +1,6 @@
 variable db_disk_image {
 description = "Disk image for reddit db"
-default = "fd88v0oeo7u592m85crj"
+default = "fd8uce6usr95rqc3odkt"
 }
 
 variable "public_key_path" {

@@ -1,6 +1,6 @@
 variable app_disk_image {
 description = "Disk image for reddit app"
-default = "fd85ca2jviutmh4jgplv"
+default = "fd8gahn033r7egdhf8gj"
 }
 variable "private_key_path"{
 description = "private key path"
