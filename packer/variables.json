@@ -1,5 +1,5 @@
 {
-   "key_file": "serce-account-key.json",
+   "key_file": "service-account-key.json",
    "folder_id": "b1g45b2ueser4lkvkknm",
    "s_image_family": "ubuntu-1604-lts",
    "subnet": "e9bilbhp5spkuuv0js58"
