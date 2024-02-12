@@ -146,7 +146,7 @@ reddit_app_multiple_play.yml - c несколькими сценариями.
 
 
 
-***HW Ansible-3***
+***HW 8 Ansible-3***
 
 
 * Созданы роли app и db
