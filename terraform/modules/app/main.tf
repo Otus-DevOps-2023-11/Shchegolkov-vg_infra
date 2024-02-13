@@ -35,6 +35,7 @@ connection {
   agent        = false
   private_key  = file(var.private_key_path)
 }
+
 #provisioner "file" {
 #    source      = "files/puma.service"
 #    destination = "/tmp/puma.service"
