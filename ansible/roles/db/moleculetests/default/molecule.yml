@@ -1,0 +1,18 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant # чем запускаем окружение
+provider:
+  name: virtualbox # в какой среде
+platforms:
+- name: instance # что в этой сере используем (ОБРАЗ)
+  box: ubuntu/xenial64
+provisioner:
+  name: ansible # чем запускаем приведение к нужному состоянию
+verifier:
+  name: testinfra # чем проверяем (питон скрипт в tests)
+lint: |           # проверяем код на синтаксис
+  set -e
+  yamllint .
+  ansible-lint --force-color
